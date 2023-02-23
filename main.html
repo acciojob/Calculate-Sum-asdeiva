@@ -15,9 +15,25 @@
 		<br>
 		<input type="button" id="sum_btn" value="Calculate" onclick="sumOf2()">
 	</div>
-	<div id=sum></div>
+	<div id="sum"></div>
     <script type="text/javascript" src="./script.js">
 </script>
+	<script>
+		//your JS code here. If required.
+
+
+        function sumOf2(){
+        let n1=document.querySelector('#n1')
+        let n2=document.querySelector('#n2')
+        let sum=document.querySelector('#sum')
+            val1 = parseFloat(n1.value);
+            val2 = parseFloat(n2.value);
+            let result = val1+val2;
+            sum.innerHTML = result
+            console.log(val1);
+            
+        }
+	</script>
 
 </body>
 
