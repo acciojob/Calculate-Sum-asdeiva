@@ -1,12 +1,12 @@
 //your JS code here. If required.
-let n1=document.getElementById('n1').value
-let n2=document.getElementById('n2').value
-let sum=document.getElementById('sum')
+let n1=document.querySelector('#n1')
+let n2=document.querySelector('#n2')
+let sum=document.querySelector('#sum')
 function sumOf2(){
-  console.log(parseInt(n1))
-  lett ans = parseInt(n1+n2)
-  if(ans!=0){
-    sum.innerHTML = parseInt(n1+n2)
-  }
+
+	let n1 = parseFloat(n1.value);
+	let n2 = parseFloat(n2.value);
+
+	sum.innerHTML = n1+n2;
 	
 }
